@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:image:alt" content="HHE Web Studio siyah ve altın kurumsal kimliği">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="HHE Web Studio | Design. Build. Grow.">
+  <meta property="og:description" content="Markanızı dijitalde güçlü gösteren modern web tasarım çözümleri.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/hhe-mark.svg">
+  <meta name="description" content="HHE Web Studio — işletmeler için modern, hızlı ve mobil uyumlu web tasarım çözümleri.">
+  <title>HHE Web Studio | Design. Build. Grow.</title>
+  <style>
+    :root{--bg:#101010;--panel:#171717;--panel2:#1e1e1e;--white:#f7f6f2;--muted:#aaa69d;--gold:#d4af37;--gold2:#f0d77a;--line:rgba(212,175,55,.22);--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.gold{color:var(--gold)}.eyebrow{color:var(--gold);font-size:.76rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.section{padding:104px 0}.section-head{max-width:650px;margin-bottom:42px}.section-head h2{font-size:clamp(2rem,4vw,3.35rem);line-height:1.08;letter-spacing:-.045em;margin:12px 0}.section-head p{color:var(--muted);margin:0;font-size:1.04rem}
+    /* HHE brand refinement */
+    ::selection{background:rgba(212,175,55,.32);color:#fff}
+    body{background-image:radial-gradient(rgba(212,175,55,.10) .7px,transparent .7px);background-size:26px 26px;background-position:center top}
+    .brand-mark{position:relative;isolation:isolate;background:linear-gradient(145deg,#242017,#101010);box-shadow:inset 0 0 18px rgba(212,175,55,.08),0 0 22px rgba(212,175,55,.08);font-size:.93rem}
+    .brand-mark:after{content:"";position:absolute;inset:4px;border:1px solid rgba(212,175,55,.22);border-radius:7px;z-index:-1}
+    .brand{transition:opacity .2s}.brand:hover{opacity:.82}.brand-logo{display:block;width:260px;height:auto;max-width:min(42vw,260px);flex:0 0 auto}
+    .links a:not(.nav-cta){position:relative;padding:8px 0}.links a:not(.nav-cta):after{content:"";position:absolute;left:0;right:100%;bottom:2px;height:1px;background:var(--gold);transition:right .25s}.links a:not(.nav-cta):hover:after{right:0}
+    .nav-cta,.btn{box-shadow:0 7px 24px rgba(212,175,55,.12);position:relative;overflow:hidden}
+    .nav-cta:before,.btn:not(.btn-outline):before{content:"";position:absolute;top:-80%;left:-35%;width:24%;height:260%;background:rgba(255,255,255,.28);transform:rotate(24deg);transition:left .55s}
+    .nav-cta:hover:before,.btn:not(.btn-outline):hover:before{left:120%}
+    .hero{isolation:isolate;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px),radial-gradient(ellipse at 78% 44%,rgba(212,175,55,.16),transparent 34%),linear-gradient(120deg,#101010 45%,#15130e);background-size:54px 54px,54px 54px,auto,auto}
+    .hero:before{content:"";position:absolute;width:480px;height:480px;border:1px solid rgba(212,175,55,.10);border-radius:50%;right:8%;top:8%;box-shadow:0 0 0 35px rgba(212,175,55,.018),0 0 0 70px rgba(212,175,55,.012);pointer-events:none}
+    .hero:after{z-index:-1}
+    .hero h1{font-weight:850;text-wrap:balance}
+    .hero h1 span{background:linear-gradient(110deg,#f4dc8a 0%,#d4af37 48%,#9b7620 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero-copy{line-height:1.8}
+    .hero-note{display:flex;align-items:center;gap:10px}.hero-note:before{content:"";width:26px;height:1px;background:var(--gold)}
+    .visual{perspective:900px}.orbit{animation:orbitFloat 8s ease-in-out infinite;transform-style:preserve-3d;background:radial-gradient(circle,rgba(212,175,55,.055),transparent 65%)}
+    .orbit:before{animation:orbitPulse 5s ease-in-out infinite}.orbit:after{animation:orbitPulse 5s ease-in-out infinite reverse}
+    .monogram{background:linear-gradient(145deg,#f3dc8d,#c39a2e 58%,#8b681c);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .orbit-tag{box-shadow:0 12px 35px #0008;backdrop-filter:blur(10px)}
+    .tag-one{animation:tagFloat 5s ease-in-out infinite}.tag-two{animation:tagFloat 6s ease-in-out infinite reverse}.tag-three{animation:tagFloat 5.5s ease-in-out infinite .5s}
+    .trust{background:rgba(15,15,15,.72);backdrop-filter:blur(8px)}
+    .section-head h2,.about-copy h2,.cta h2{text-wrap:balance}
+    .card,.project,.step,.about-panel,.contact-form{box-shadow:0 14px 45px rgba(0,0,0,.12)}
+    .card{background:linear-gradient(145deg,rgba(32,30,25,.94),rgba(19,19,19,.96))}
+    .card:hover,.project:hover{box-shadow:0 22px 55px rgba(0,0,0,.28),0 0 0 1px rgba(212,175,55,.12)}
+    .project{transition:transform .25s,border-color .25s,box-shadow .25s}.project:hover{transform:translateY(-4px);border-color:var(--line)}
+    .project-art{background-blend-mode:screen}
+
+    .project-link{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:10px 14px;border:1px solid rgba(212,175,55,.45);border-radius:999px;color:var(--gold);font-size:.78rem;font-weight:800;transition:background .2s,color .2s,transform .2s}.project-link:hover{background:var(--gold);color:#101010;transform:translateY(-2px)}
+    .project-info{display:flex;flex-direction:column;align-items:flex-start}.project-info p{margin-bottom:0}
+    .section{scroll-margin-top:82px}
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+    .reveal.is-visible{opacity:1;transform:translateY(0)}
+    .hero-copy,.hero h1,.hero .eyebrow,.hero .actions,.hero-note{animation:heroIn .8s both}
+    .hero h1{animation-delay:.08s}.hero-copy{animation-delay:.16s}.hero .actions{animation-delay:.24s}.hero-note{animation-delay:.32s}
+    @keyframes heroIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes orbitFloat{0%,100%{transform:translateY(0) rotateX(0)}50%{transform:translateY(-12px) rotateX(2deg)}}
+    @keyframes orbitPulse{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.035);opacity:1}}
+    @keyframes tagFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @media(prefers-reduced-motion:reduce){.reveal,.hero-copy,.hero h1,.hero .eyebrow,.hero .actions,.hero-note,.orbit,.orbit:before,.orbit:after,.orbit-tag{animation:none!important;transition:none!important;opacity:1;transform:none}}
+    header{position:sticky;top:0;z-index:20;background:rgba(16,16,16,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.06em}.brand-mark{width:39px;height:39px;border:1px solid var(--gold);border-radius:11px;display:grid;place-items:center;color:var(--gold);font-size:1.05rem;letter-spacing:-.08em}.brand small{display:block;color:#aaa;font-size:.62rem;letter-spacing:.24em;margin-top:-4px}.links{display:flex;align-items:center;gap:27px;color:#d0cec8;font-size:.88rem}.links a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--gold);border-radius:999px;padding:12px 19px;color:var(--bg);background:var(--gold);font-weight:800;font-size:.88rem;transition:.2s}.nav-cta:hover,.btn:hover{background:var(--gold2);transform:translateY(-2px)}.btn-outline{background:transparent;color:var(--white)}.btn-outline:hover{color:var(--bg)}.menu{display:none;background:none;color:white;border:1px solid #444;border-radius:10px;padding:8px 11px}
+    .hero{min-height:690px;display:grid;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.06);background:radial-gradient(ellipse at 78% 44%,rgba(212,175,55,.12),transparent 34%),linear-gradient(120deg,#101010 45%,#15130e)}.hero:after{content:"HHE";position:absolute;right:-2vw;bottom:-.25em;font-size:clamp(13rem,34vw,34rem);font-weight:950;letter-spacing:-.12em;color:rgba(255,255,255,.018);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center;position:relative;z-index:1;padding:90px 0}.hero h1{font-size:clamp(3.4rem,7.7vw,6.8rem);line-height:.94;letter-spacing:-.075em;margin:20px 0 24px;max-width:780px}.hero h1 span{color:var(--gold)}.hero-copy{color:#bcb8af;max-width:570px;font-size:1.1rem}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}.hero-note{margin-top:30px;color:#77736b;font-size:.78rem;letter-spacing:.06em}.visual{min-height:390px;position:relative;display:grid;place-items:center}.orbit{width:min(360px,78vw);aspect-ratio:1;border:1px solid rgba(212,175,55,.3);border-radius:50%;display:grid;place-items:center;position:relative;box-shadow:0 0 90px rgba(212,175,55,.07)}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(212,175,55,.16);border-radius:50%;inset:28px}.orbit:after{inset:62px}.monogram{font-size:clamp(5rem,11vw,8rem);font-weight:950;letter-spacing:-.13em;color:var(--gold);text-shadow:0 10px 60px rgba(212,175,55,.2);z-index:1}.orbit-tag{position:absolute;background:#1a1916;border:1px solid var(--line);border-radius:999px;padding:9px 14px;color:#ddd;font-size:.75rem}.tag-one{top:12%;right:-5%}.tag-two{bottom:14%;left:-8%}.tag-three{bottom:0;right:12%}
+    .trust{border-bottom:1px solid rgba(255,255,255,.07);padding:22px 0;color:#8f8b83;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}.trust-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(145deg,#1b1b1b,#141414);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:27px;min-height:235px;transition:.25s}.card:hover{border-color:var(--line);transform:translateY(-5px)}.icon{width:45px;height:45px;border:1px solid var(--line);border-radius:13px;display:grid;place-items:center;color:var(--gold);font-size:1.2rem;margin-bottom:24px}.card h3{margin:0 0 9px;font-size:1.15rem}.card p{margin:0;color:var(--muted);font-size:.93rem}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.project{border:1px solid rgba(255,255,255,.09);border-radius:18px;overflow:hidden;background:#171717}.project-art{height:245px;padding:25px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.project-art:before{content:"";position:absolute;width:230px;height:230px;border-radius:50%;filter:blur(1px);opacity:.45}.art-villa{background:linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,.08)),url("assets/villa-preview.jpg") center/cover}.art-villa:before{background:#c6a85b;right:-55px;top:-90px}.art-cafe{background:linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,.08)),url("assets/cafe-preview.jpg") center/cover}.art-cafe:before{background:#b66a36;left:-70px;bottom:-120px}.art-auto{background:linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,.08)),url("assets/auto-preview.jpg") center/cover}.art-auto:before{background:#5d89ad;right:-65px;bottom:-100px}.art-beauty{background:linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,.08)),url("assets/beauty-preview.jpg") center/cover}.art-beauty:before{background:#b97891;left:-65px;top:-100px}.browser{position:relative;z-index:1;width:82%;background:#f4f0e7;color:#191919;border-radius:9px;box-shadow:0 20px 55px #0008;overflow:hidden}.browser-top{height:17px;background:#ddd8ce;display:flex;align-items:center;gap:4px;padding:0 8px}.browser-top i{width:5px;height:5px;background:#999;border-radius:50%}.browser-body{padding:20px;min-height:130px}.browser-body b{font-size:1.15rem;letter-spacing:-.04em}.browser-body span{display:block;font-size:.55rem;letter-spacing:.14em;margin-top:7px;color:#80652b}.mock-line{height:5px;width:65%;background:#c9c2b5;margin-top:15px;border-radius:9px}.mock-line.short{width:38%;margin-top:7px}.project-info{padding:22px 24px}.project-info h3{margin:0 0 5px}.project-info p{margin:0;color:var(--muted);font-size:.88rem}.project-label{display:inline-block;margin-top:13px;color:var(--gold);font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:65px;align-items:center}.about-panel{border:1px solid var(--line);border-radius:22px;padding:34px;background:radial-gradient(circle at 80% 10%,rgba(212,175,55,.12),transparent 45%),#171717}.about-panel strong{font-size:4rem;line-height:1;color:var(--gold);letter-spacing:-.08em}.about-panel p{color:var(--muted);margin-bottom:0}.about-copy h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;letter-spacing:-.05em;margin:12px 0 18px}.about-copy p{color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}.checks span{font-size:.88rem;color:#ddd}.checks span:before{content:"✦";color:var(--gold);margin-right:9px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{border-top:1px solid var(--line);padding:20px 16px 0 0}.step-no{color:var(--gold);font-size:.76rem;letter-spacing:.15em;font-weight:900}.step h3{font-size:1.03rem;margin:14px 0 7px}.step p{font-size:.87rem;color:var(--muted);margin:0}.cta{padding:70px 0;background:linear-gradient(110deg,#1c1a14,#171717 60%,#211c10);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.08;letter-spacing:-.05em;margin:10px 0}.cta p{color:var(--muted);margin:0}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}.contact-details{display:grid;gap:13px;margin-top:25px}.contact-item{border:1px solid rgba(255,255,255,.08);border-radius:13px;padding:15px 17px;color:#ddd}.contact-item small{display:block;color:var(--muted);font-size:.72rem;margin-bottom:3px}.contact-form{background:#171717;border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:27px}.field{display:grid;gap:7px;margin-bottom:15px}.field label{font-size:.82rem;color:#ddd}.field input,.field textarea,.field select{width:100%;background:#101010;border:1px solid #35332e;border-radius:10px;padding:13px;color:white;font:inherit;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold)}.field textarea{min-height:115px;resize:vertical}.form-note{font-size:.75rem;color:#8e897f;margin:12px 0 0}.form-status{color:var(--gold);font-size:.84rem;margin-top:12px;min-height:1.3em}
+    footer{padding:28px 0;color:#858078;font-size:.8rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{color:#eee;font-weight:900;letter-spacing:.08em}
+    @media(max-width:850px){.links{gap:14px}.hero-grid{grid-template-columns:1fr .7fr}.visual{min-height:300px}.cards{grid-template-columns:repeat(2,1fr)}.about-grid{gap:30px}.steps{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:650px){.brand-logo{width:190px;max-width:55vw}.wrap{width:min(var(--max),calc(100% - 32px))}.nav{height:68px}.menu{display:block}.links{display:none;position:absolute;top:68px;left:0;right:0;padding:18px 22px 22px;background:#141414;border-bottom:1px solid #333;flex-direction:column;align-items:stretch}.links.open{display:flex}.links .nav-cta{text-align:center}.hero-grid{grid-template-columns:1fr;padding:76px 0 55px;gap:20px}.hero{min-height:auto}.hero h1{font-size:clamp(3.35rem,15vw,5.2rem)}.visual{min-height:270px}.orbit{width:250px}.section{padding:76px 0}.cards,.projects,.about-grid,.contact-grid{grid-template-columns:1fr}.project-art{height:215px}.about-panel{order:2}.checks{grid-template-columns:1fr}.cta-inner{align-items:flex-start;flex-direction:column}.steps{grid-template-columns:1fr 1fr}.trust-inner{justify-content:flex-start;gap:12px 22px}.trust-inner span{font-size:.68rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+.pricing-section{background:radial-gradient(circle at 50% 0,rgba(212,175,55,.075),transparent 42%),#111;border-block:1px solid rgba(255,255,255,.07)}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;align-items:stretch}.price-card{position:relative;display:flex;flex-direction:column;background:linear-gradient(155deg,#1b1b1b,#131313);border:1px solid rgba(255,255,255,.1);border-radius:19px;padding:27px;min-height:100%;transition:.25s}.price-card:hover{transform:translateY(-5px);border-color:rgba(212,175,55,.5)}.price-card.featured{border-color:#d4af37;box-shadow:0 14px 45px rgba(212,175,55,.09)}
+.price-ribbon{position:absolute;right:17px;top:17px;color:#111;background:#d4af37;border-radius:30px;padding:6px 10px;font-size:.65rem;font-weight:900;letter-spacing:.08em}.price-kicker{font-size:.72rem;color:var(--gold);letter-spacing:.14em;font-weight:900;text-transform:uppercase}.price-card h3{font-size:1.45rem;margin:10px 0 7px}.price-desc{color:var(--muted);font-size:.88rem;min-height:45px;margin:0}.price-amount{font-size:2.25rem;font-weight:900;letter-spacing:-.06em;margin:22px 0 3px}.price-amount small{font-size:.78rem;color:var(--muted);font-weight:600;letter-spacing:0}.price-sub{font-size:.74rem;color:#928b7e;margin:0 0 18px}.price-features{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:11px;flex:1}.price-features li{font-size:.86rem;color:#dedbd3}.price-features li:before{content:'✓';color:var(--gold);font-weight:900;margin-right:9px}.price-card .btn{width:100%;justify-content:center;margin-top:auto}.price-footnote{color:#938d82;font-size:.78rem;margin:19px 0 0;line-height:1.65}
+.comparison-wrap{margin-top:44px;border:1px solid rgba(255,255,255,.09);border-radius:16px;overflow:hidden;background:#151515}.comparison-title{padding:22px 24px 8px;font-size:1.1rem}.comparison{width:100%;border-collapse:collapse;font-size:.84rem}.comparison th,.comparison td{padding:14px 17px;text-align:center;border-top:1px solid rgba(255,255,255,.07)}.comparison th:first-child,.comparison td:first-child{text-align:left;color:#ddd}.comparison th{color:var(--gold);font-size:.76rem;letter-spacing:.06em}.comparison td{color:#c9c4b9}.comparison .yes{color:var(--gold);font-weight:900}.comparison-scroll{overflow-x:auto}
+.addons{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}.addon{border:1px solid rgba(255,255,255,.09);border-radius:13px;padding:17px;background:#171717}.addon b{display:block;font-size:.88rem}.addon span{display:block;color:var(--gold);font-weight:800;margin-top:7px;font-size:.88rem}.addon small{color:var(--muted);font-size:.72rem}.pricing-disclaimer{border-left:2px solid var(--gold);padding:12px 16px;background:rgba(212,175,55,.045);color:#aaa396;font-size:.78rem;line-height:1.65;margin-top:22px}
+@media(max-width:850px){.pricing-grid{grid-template-columns:1fr 1fr}.addons{grid-template-columns:1fr 1fr}}@media(max-width:650px){.pricing-grid{grid-template-columns:1fr}.price-card{padding:23px}.addons{grid-template-columns:1fr 1fr}.comparison{min-width:620px}}
+
+/* Stage 4 · Interactive quote builder */
+.quote-section{background:linear-gradient(145deg,#151515,#101010);border-block:1px solid rgba(212,175,55,.18)}
+.quote-shell{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:start}
+.quote-panel,.quote-summary{border:1px solid rgba(255,255,255,.1);border-radius:18px;background:#181818;padding:24px}
+.quote-panel h3,.quote-summary h3{margin:0 0 17px;font-size:1.08rem}
+.quote-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.quote-field{display:flex;flex-direction:column;gap:7px}.quote-field.full{grid-column:1/-1}
+.quote-field label,.quote-label{font-size:.82rem;color:#ddd}.quote-field select,.quote-field input{width:100%;background:#101010;color:#fff;border:1px solid #393939;border-radius:9px;padding:12px;font:inherit;min-height:45px}
+.quote-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.quote-option{display:flex;align-items:flex-start;gap:10px;padding:12px;border:1px solid rgba(255,255,255,.1);border-radius:10px;background:#131313;font-size:.82rem;color:#ddd}
+.quote-option input{accent-color:#d4af37;margin-top:3px}.quote-option small{display:block;color:#a99f88;margin-top:3px}
+.quote-summary{position:sticky;top:95px;background:linear-gradient(160deg,#211d11,#171717);border-color:rgba(212,175,55,.35)}
+.quote-line{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.09);font-size:.86rem;color:#c8c2b4}
+.quote-line strong{color:#fff;white-space:nowrap}.quote-total{display:flex;justify-content:space-between;align-items:end;gap:10px;padding:18px 0 8px}.quote-total span{color:#d6cba9;font-size:.85rem}.quote-total strong{font-size:1.8rem;color:#d4af37}.quote-monthly{font-size:.78rem;color:#b8ad92;line-height:1.6;margin:0 0 18px}
+.quote-note{font-size:.75rem;color:#a9a396;line-height:1.65;margin:14px 0 0}.quote-action{width:100%;cursor:pointer;border:0}.quote-status{min-height:20px;color:#d4af37;font-size:.8rem;margin-top:10px}
+@media(max-width:760px){.quote-shell{grid-template-columns:1fr}.quote-summary{position:static}.quote-fields{grid-template-columns:1fr}.quote-field.full{grid-column:auto}}
+@media(max-width:480px){.quote-options{grid-template-columns:1fr}.quote-panel,.quote-summary{padding:18px}}
+
+  
+
+/* Stage 5 · İletişim, güven ve sık sorulan sorular */
+.stage5-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.stage5-trust article{padding:20px;border:1px solid rgba(212,175,55,.2);border-radius:14px;background:linear-gradient(145deg,#1b1b1b,#141414)}
+.stage5-trust b{display:block;color:#f2d77c;margin-bottom:8px;font-size:.95rem}
+.stage5-trust p{margin:0;color:#bdb8ad;font-size:.84rem;line-height:1.65}
+.faq-section{background:#141414;border-block:1px solid rgba(255,255,255,.06)}
+.faq-list{max-width:900px;margin:30px auto 0;display:grid;gap:10px}
+.faq-list details{border:1px solid rgba(255,255,255,.11);border-radius:12px;background:#191919;padding:0 18px}
+.faq-list summary{cursor:pointer;list-style:none;padding:18px 28px 18px 0;color:#f5f0e4;font-weight:600;position:relative}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary:after{content:'+';position:absolute;right:0;top:14px;color:#d4af37;font-size:1.35rem}
+.faq-list details[open] summary:after{content:'−'}
+.faq-list details p{margin:0;padding:0 0 18px;color:#bdb8ad;font-size:.9rem;line-height:1.75}
+.contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.contact-quick{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid rgba(212,175,55,.42);border-radius:9px;padding:11px 15px;color:#e8d18a;font-size:.85rem;font-weight:600;text-decoration:none}
+.contact-quick:hover{background:rgba(212,175,55,.1)}
+.contact-quick.disabled{opacity:.62;cursor:not-allowed;border-style:dashed}
+.contact-hint{font-size:.75rem;color:#a9a396;line-height:1.6;margin-top:12px}
+@media(max-width:760px){.stage5-trust{grid-template-columns:1fr}.contact-actions{flex-direction:column;align-items:stretch}}
+
+
+    .skip-link{position:fixed;left:14px;top:10px;z-index:9999;padding:10px 14px;background:#d4af37;color:#111;border-radius:8px;font-weight:800;transform:translateY(-160%)}
+    .skip-link:focus{transform:translateY(0)}
+    :focus-visible{outline:3px solid #f0d77a;outline-offset:3px;border-radius:4px}
+    .legal-links{display:flex;gap:16px;flex-wrap:wrap;font-size:.82rem;color:#c9c2b2}
+    .legal-links a:hover{color:#f0d77a;text-decoration:underline}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">İçeriğe geç</a>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#anasayfa" aria-label="HHE Web Studio ana sayfa"><img class="brand-logo" src="assets/hhe-logo.svg" alt="HHE Web Studio — Design. Build. Grow"></a>
+    <button class="menu" id="menuBtn" aria-label="Menüyü aç" aria-expanded="false">☰</button>
+    <nav class="links" id="navLinks" aria-label="Ana menü">
+      <a href="#hizmetler">Hizmetler</a><a href="#fiyatlandirma">Fiyatlar</a><a href="#teklif-olustur">Teklif oluştur</a><a href="#portfoy">Portföy</a><a href="#hakkimizda">Hakkımızda</a><a href="#surec">Süreç</a><a href="#sss">SSS</a><a class="nav-cta" href="#iletisim">Projenizi konuşalım ↗</a>
+    </nav>
+  </div>
+</header>
+<main id="main-content">
+  <section class="hero" id="anasayfa"><div class="wrap hero-grid">
+    <div><div class="eyebrow">Bağımsız dijital tasarım stüdyosu · Türkiye</div><h1>Dijitalde<br>güçlü bir <span>iz</span><br>bırakın.</h1><p class="hero-copy">Markanızın karakterini yansıtan, müşterilerinize güven veren ve her ekranda kusursuz çalışan dijital deneyimler tasarlıyoruz.</p><div class="actions"><a class="btn" href="#iletisim">Projenizi başlatalım <span>↗</span></a><a class="btn btn-outline" href="#portfoy">Çalışmaları keşfet</a></div><div class="hero-note">STRATEJİ <span>·</span> TASARIM <span>·</span> GELİŞTİRME</div></div>
+    <div class="visual" aria-label="HHE marka amblemi"><div class="orbit"><div class="monogram">HHE</div><span class="orbit-tag tag-one">Modern tasarım</span><span class="orbit-tag tag-two">Mobil uyumlu</span><span class="orbit-tag tag-three">Marka odaklı</span></div></div>
+  </div></section>
+  <div class="trust"><div class="wrap trust-inner"><span>Özgün tasarım</span><span>Mobil öncelikli</span><span>Hızlı deneyim</span><span>İşletmenize özel</span></div></div>
+  <section class="section reveal" id="hizmetler"><div class="wrap"><div class="section-head"><div class="eyebrow">Neler yapıyoruz?</div><h2>İşletmeniz için <span class="gold">doğru dijital vitrin.</span></h2><p>İhtiyacınıza uygun, sade ve etkili web çözümleriyle müşterilerinizin size ulaşmasını kolaylaştırıyoruz.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">✳</div><h3>Kurumsal web siteleri</h3><p>Markanızı, ekibinizi, hizmetlerinizi ve iletişim bilgilerinizi profesyonel bir yapıda sunun.</p></article>
+      <article class="card"><div class="icon">⌂</div><h3>Ürün & mekân tanıtımı</h3><p>Gayrimenkul, otel, restoran ve işletmeler için etkileyici görsel sunumlar hazırlayın.</p></article>
+      <article class="card"><div class="icon">▣</div><h3>Mobil uyumlu tasarım</h3><p>Telefon, tablet ve masaüstünde rahat kullanılan, farklı ekranlara uyum sağlayan arayüzler.</p></article>
+      <article class="card"><div class="icon">↗</div><h3>İletişim entegrasyonu</h3><p>WhatsApp, telefon, e-posta ve harita bağlantılarıyla müşterileriniz size kolayca ulaşsın.</p></article>
+      <article class="card"><div class="icon">◎</div><h3>Temel SEO düzeni</h3><p>Başlıklar, açıklamalar ve sayfa yapısıyla arama motorlarına uygun bir başlangıç.</p></article>
+      <article class="card"><div class="icon">✧</div><h3>Yayın & destek</h3><p>Alan adı ve yayınlama sürecinde kurulum desteği; kapsamı belirlenmiş bakım ve güncelleme.</p></article>
+    </div>
+  </div></section>
+  <section class="section pricing-section reveal" id="fiyatlandirma"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Şeffaf fiyatlandırma</div><h2>İhtiyacınıza uygun <span class="gold">paketi seçin.</span></h2><p>İşletmenizin dijitaldeki ilk adımı için anlaşılır kapsamlar ve net başlangıç fiyatları. Her proje, ihtiyaçlarınız netleştirildikten sonra kesinleştirilir.</p></div>
+<div class="pricing-grid">
+<article class="price-card"><div class="price-kicker">İlk adım</div><h3>Başlangıç</h3><p class="price-desc">Yeni kurulan işletmeler ve sade bir dijital vitrin isteyenler için.</p><div class="price-amount">₺4.900 <small>/ proje</small></div><p class="price-sub">Başlangıç fiyatı · Tek seferlik</p><ul class="price-features"><li>Tek sayfalı modern web sitesi</li><li>Mobil ve tablet uyumlu tasarım</li><li>Hakkımızda, hizmetler ve iletişim alanları</li><li>WhatsApp ve sosyal medya bağlantıları</li><li>Temel SEO başlık ve açıklamaları</li><li>1 revizyon turu</li></ul><a class="btn btn-outline choose-package" href="#iletisim" data-package="Başlangıç">Bu paketi seç ↗</a></article>
+<article class="price-card featured"><span class="price-ribbon">EN ÇOK TERCİH EDİLEN</span><div class="price-kicker">İşini büyüt</div><h3>Profesyonel</h3><p class="price-desc">Hizmetlerini ve markasını daha kapsamlı anlatmak isteyen işletmeler için.</p><div class="price-amount">₺9.900 <small>/ proje</small></div><p class="price-sub">Başlangıç fiyatı · Tek seferlik</p><ul class="price-features"><li>5 sayfaya kadar özel web sitesi</li><li>Markaya özel görsel tasarım</li><li>Mobil ve tablet uyumlu yapı</li><li>WhatsApp, harita ve iletişim bağlantıları</li><li>Temel SEO ve sosyal paylaşım ayarları</li><li>İletişim formu tasarımı</li><li>2 revizyon turu</li></ul><a class="btn choose-package" href="#iletisim" data-package="Profesyonel">Bu paketi seç ↗</a></article>
+<article class="price-card"><div class="price-kicker">Premium deneyim</div><h3>Premium</h3><p class="price-desc">Daha güçlü marka sunumu ve özel ihtiyaçları olan işletmeler için.</p><div class="price-amount">₺17.900 <small>/ proje</small></div><p class="price-sub">Başlangıç fiyatı · Tek seferlik</p><ul class="price-features"><li>8 sayfaya kadar kapsamlı web sitesi</li><li>Özel tasarım ve gelişmiş görsel bölümler</li><li>Mobil öncelikli, duyarlı arayüz</li><li>Gelişmiş sayfa içi SEO düzeni</li><li>Blog / duyuru alanı kurulumu</li><li>Form ve iletişim akışı</li><li>3 revizyon turu</li><li>Yayın öncesi test ve teslim desteği</li></ul><a class="btn btn-outline choose-package" href="#iletisim" data-package="Premium">Bu paketi seç ↗</a></article>
+</div>
+<p class="price-footnote">* Fiyatlar örnek başlangıç teklifidir; proje kapsamı, içerik ve teknik ihtiyaçlara göre yazılı teklif ile kesinleşir. Alan adı, hosting, ücretli eklentiler, özel yazılım ve e-ticaret altyapısı paketlere dahil değildir.</p>
+<div class="comparison-wrap"><h3 class="comparison-title">Paketleri karşılaştırın</h3><div class="comparison-scroll"><table class="comparison"><thead><tr><th>Özellik</th><th>Başlangıç</th><th>Profesyonel</th><th>Premium</th></tr></thead><tbody>
+<tr><td>Sayfa kapsamı</td><td>Tek sayfa</td><td>5 sayfaya kadar</td><td>8 sayfaya kadar</td></tr><tr><td>Mobil uyum</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr><tr><td>Temel SEO</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr><tr><td>WhatsApp / harita bağlantısı</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr><tr><td>İletişim formu</td><td>—</td><td class="yes">✓</td><td class="yes">✓</td></tr><tr><td>Blog / duyuru alanı</td><td>—</td><td>—</td><td class="yes">✓</td></tr><tr><td>Revizyon turu</td><td>1</td><td>2</td><td>3</td></tr>
+</tbody></table></div></div>
+<div class="section-head" style="margin:42px 0 16px"><div class="eyebrow">İsteğe bağlı</div><h2 style="font-size:1.65rem">Ek hizmetler</h2><p>İhtiyaç duyduğunuz özellikleri projenize ayrıca ekleyebiliriz.</p></div>
+<div class="addons"><div class="addon"><b>Ek sayfa tasarımı</b><span>₺750</span><small>Sayfa başına</small></div><div class="addon"><b>Metin içerik desteği</b><span>₺1.500</span><small>Başlangıç paketi</small></div><div class="addon"><b>Gelişmiş SEO düzeni</b><span>₺2.500</span><small>Tek seferlik çalışma</small></div><div class="addon"><b>Aylık bakım desteği</b><span>₺1.250</span><small>Aylık · kapsam dahilinde</small></div></div>
+<div class="pricing-disclaimer">Önemli: Bu fiyatlar HHE Web Studio'nun başlangıç aşaması için hazırlanmış taslak fiyatlandırmadır; piyasa garantisi veya bağlayıcı teklif değildir. Proje başlamadan önce kapsam, teslim tarihi, ödeme planı ve varsa üçüncü taraf giderleri yazılı olarak onaylanır.</div>
+</div></section>
+  <section class="section quote-section reveal" id="teklif-olustur"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Kendi teklifinizi oluşturun</div><h2>Projenizin yaklaşık <span class="gold">maliyetini görün.</span></h2><p>İşletmenize ve ihtiyaçlarınıza göre seçim yapın. Tutar anında güncellenir; bu hesaplama ön bilgilendirme amaçlıdır.</p></div>
+    <div class="quote-shell">
+      <div class="quote-panel"><h3>Proje tercihleri</h3>
+        <div class="quote-fields">
+          <div class="quote-field"><label for="quoteBusiness">İşletme türü</label><select id="quoteBusiness"><option>Kafe / Restoran</option><option>Güzellik / Bakım</option><option>Gayrimenkul / Villa</option><option>Otomotiv / Galeri</option><option>Kurumsal işletme</option><option>Diğer</option></select></div>
+          <div class="quote-field"><label for="quotePackage">Web sitesi paketi</label><select id="quotePackage"><option value="4900">Başlangıç — ₺4.900</option><option value="9900" selected>Profesyonel — ₺9.900</option><option value="17900">Premium — ₺17.900</option></select></div>
+          <div class="quote-field full"><label for="extraPages">Ek sayfa sayısı (paket kapsamı dışında)</label><input id="extraPages" type="number" min="0" max="30" value="0" inputmode="numeric"></div>
+        </div>
+        <div class="quote-label" style="margin-top:20px">İsteğe bağlı ek hizmetler</div>
+        <div class="quote-options">
+          <label class="quote-option"><input type="checkbox" data-addon="content" data-price="1500"><span>Metin içerik desteği<small>₺1.500 · tek seferlik</small></span></label>
+          <label class="quote-option"><input type="checkbox" data-addon="seo" data-price="2500"><span>Gelişmiş SEO düzeni<small>₺2.500 · tek seferlik</small></span></label>
+          <label class="quote-option"><input type="checkbox" data-addon="care" data-price="1250"><span>Aylık bakım desteği<small>₺1.250 · aylık</small></span></label>
+        </div>
+      </div>
+      <aside class="quote-summary" aria-live="polite"><h3>Teklif özeti</h3>
+        <div class="quote-line"><span>Seçilen paket</span><strong id="quotePackageName">Profesyonel</strong></div>
+        <div class="quote-line"><span>Ek sayfalar</span><strong id="quotePagesCost">₺0</strong></div>
+        <div class="quote-line"><span>Tek seferlik ek hizmetler</span><strong id="quoteAddonsCost">₺0</strong></div>
+        <div class="quote-total"><span>Tahmini proje toplamı</span><strong id="quoteTotal">₺9.900</strong></div>
+        <p class="quote-monthly" id="quoteMonthly">Aylık bakım seçilmedi.</p>
+        <button class="btn quote-action" id="useQuote" type="button">Bu teklifle devam et ↗</button>
+        <div class="quote-status" id="quoteStatus" role="status"></div>
+        <p class="quote-note">Hesaplama tahminidir, kesin fiyat teklifi değildir. Alan adı, hosting, ücretli lisanslar, e-ticaret ve özel yazılım ihtiyaçları ayrıca değerlendirilir. Aylık bakım bedeli proje toplamına eklenmez.</p>
+      </aside>
+    </div>
+  </div></section>
+  <section class="section reveal" id="portfoy" style="background:#141414;border-block:1px solid rgba(255,255,255,.06)"><div class="wrap"><div class="section-head"><div class="eyebrow">Seçili konseptler</div><h2>Fikirleri dijital <span class="gold">deneyime</span> dönüştürüyoruz.</h2><p>Aşağıdaki çalışmalar HHE Web Studio için hazırlanmış örnek konsept tasarımlardır; gerçek müşteri projeleri veya aktif işletme ilanları değildir.</p></div>
+    <div class="projects">
+      <article class="project"><div class="project-art art-villa"><div class="browser"><div class="browser-top"><i></i><i></i><i></i></div><div class="browser-body"><b>THE VILLA<br>COLLECTION</b><span>TIMELESS LIVING · PRIVATE RETREATS</span><div class="mock-line"></div><div class="mock-line short"></div></div></div></div><div class="project-info"><h3>Villa & gayrimenkul</h3><p>Seçkin mülkler için görsel odaklı tanıtım konsepti.</p><span class="project-label">Konsept çalışma · 01</span><a class="project-link" href="demos/villa/index.html" aria-label="Canlı demoyu incele ↗ — konsept 01">Canlı demoyu incele ↗</a></div></article>
+      <article class="project"><div class="project-art art-cafe"><div class="browser"><div class="browser-top"><i></i><i></i><i></i></div><div class="browser-body"><b>ROAST & ROOT</b><span>COFFEE · COMMUNITY · CRAFT</span><div class="mock-line"></div><div class="mock-line short"></div></div></div></div><div class="project-info"><h3>Kafe & restoran</h3><p>Menü, atmosfer ve iletişim odaklı işletme sitesi.</p><span class="project-label">Konsept çalışma · 02</span><a class="project-link" href="demos/cafe/index.html" aria-label="Canlı demoyu incele ↗ — konsept 02">Canlı demoyu incele ↗</a></div></article>
+      <article class="project"><div class="project-art art-auto"><div class="browser"><div class="browser-top"><i></i><i></i><i></i></div><div class="browser-body"><b>FORM MOTOR</b><span>DRIVE YOUR NEXT CHAPTER</span><div class="mock-line"></div><div class="mock-line short"></div></div></div></div><div class="project-info"><h3>Otomotiv & galeri</h3><p>Araçları ve hizmetleri öne çıkaran katalog konsepti.</p><span class="project-label">Konsept çalışma · 03</span><a class="project-link" href="demos/auto/index.html" aria-label="Canlı demoyu incele ↗ — konsept 03">Canlı demoyu incele ↗</a></div></article>
+      <article class="project"><div class="project-art art-beauty"><div class="browser"><div class="browser-top"><i></i><i></i><i></i></div><div class="browser-body"><b>ATELIER<br>BEAUTÉ</b><span>CARE · BEAUTY · CONFIDENCE</span><div class="mock-line"></div><div class="mock-line short"></div></div></div></div><div class="project-info"><h3>Güzellik & bakım</h3><p>Hizmetleri ve randevu iletişimini sade biçimde sunan konsept.</p><span class="project-label">Konsept çalışma · 04</span><a class="project-link" href="demos/beauty/index.html" aria-label="Canlı demoyu incele ↗ — konsept 04">Canlı demoyu incele ↗</a></div></article>
+    </div>
+  </div></section>
+  <section class="section reveal" id="hakkimizda"><div class="wrap about-grid"><div class="about-panel"><strong>HHE.</strong><div class="eyebrow" style="margin-top:17px">Design · Build · Grow</div><p>Her işletmenin anlatılmaya değer bir hikâyesi olduğuna inanıyoruz. Biz de bu hikâyeyi dijital dünyaya taşıyoruz.</p></div><div class="about-copy"><div class="eyebrow">Hakkımızda</div><h2>İyi tasarım, iyi bir <span class="gold">ilk izlenimle</span> başlar.</h2><p>HHE Web Studio, işletmelerin dijital dünyada daha güçlü görünmesine yardımcı olmak için kurulmuş bağımsız bir web tasarım girişimidir. Her projede markanın ihtiyacını anlamayı, anlaşılır bir deneyim sunmayı ve işlevsel bir site ortaya çıkarmayı hedefliyoruz.</p><p>İşletmenizin büyüklüğü ne olursa olsun, dijital vitrininizin özenli olması gerektiğine inanıyoruz.</p><div class="checks"><span>İhtiyaca özel yaklaşım</span><span>Temiz ve modern arayüz</span><span>Mobil öncelikli yapı</span><span>Açık iletişim</span></div></div></div></section>
+  <section class="section reveal" id="surec" style="background:#141414;border-block:1px solid rgba(255,255,255,.06)"><div class="wrap"><div class="section-head"><div class="eyebrow">Nasıl çalışıyoruz?</div><h2>Fikirden yayına, <span class="gold">dört adımda.</span></h2><p>Süreç boyunca ne yapılacağını ve projenin kapsamını birlikte netleştiriyoruz.</p></div><div class="steps"><div class="step"><div class="step-no">01 / KEŞİF</div><h3>Sizi dinliyoruz</h3><p>İşletmenizi, hedef kitlenizi ve ihtiyaçlarınızı öğreniyoruz.</p></div><div class="step"><div class="step-no">02 / PLAN</div><h3>Yol haritası</h3><p>Sayfa yapısını, içerikleri, teslim süresini ve bütçeyi netleştiriyoruz.</p></div><div class="step"><div class="step-no">03 / TASARIM</div><h3>Üretiyoruz</h3><p>Tasarımı geliştiriyor, geri bildirimlerinizle son hâline getiriyoruz.</p></div><div class="step"><div class="step-no">04 / YAYIN</div><h3>Yayına alıyoruz</h3><p>Testleri tamamlayıp kararlaştırılan kapsamda sitenizi teslim ediyoruz.</p></div></div></div></section>
+  <section class="section reveal" id="sss" style="background:#101010"><div class="wrap"><div class="section-head"><div class="eyebrow">Merak edilenler</div><h2>Karar vermeden önce <span class="gold">bilmeniz gerekenler.</span></h2><p>İş birliğinin kapsamını ve nasıl ilerlediğimizi açıkça anlatıyoruz.</p></div><div class="faq-list">
+    <details><summary>Web sitesi tasarımı ne kadar sürer?</summary><p>Süre; sayfa sayısına, içeriklerin hazır olmasına ve istenen özelliklere göre değişir. Proje başlamadan önce kapsam ve tahmini teslim takvimi yazılı olarak netleştirilir.</p></details>
+    <details><summary>Fiyatlara alan adı ve hosting dahil mi?</summary><p>Fiyatlandırma bölümündeki tutarlar tasarım ve geliştirme hizmetleri için başlangıç tahminidir. Alan adı, hosting, ücretli eklenti/lisans ve üçüncü taraf servis ücretleri ayrıca değerlendirilir.</p></details>
+    <details><summary>Web sitem telefon ve tablette düzgün çalışır mı?</summary><p>Projeler mobil öncelikli ve farklı ekran boyutlarına uyumlu olacak şekilde hazırlanır. Yayına almadan önce temel ekran ve tarayıcı kontrolleri yapılır.</p></details>
+    <details><summary>Revizyon yapabilir miyim?</summary><p>Seçilen pakette belirtilen revizyon turu dahildir. Revizyonun kapsamı, proje başlangıcında birlikte netleştirilir; kapsam dışı yeni talepler ayrıca fiyatlandırılabilir.</p></details>
+    <details><summary>Ödeme nasıl yapılır?</summary><p>Ödeme aşamaları ve varsa ön ödeme tutarı proje kapsamı kesinleştiğinde yazılı teklifte belirtilir. Onayınız olmadan çalışma başlatılmaz.</p></details>
+    <details><summary>Web sitemi daha sonra güncelleyebilir miyim?</summary><p>Evet. Güncelleme ve bakım ihtiyaçları için isteğe bağlı destek sunulabilir. Aylık bakım paketinin kapsamı ve sınırları teklif sırasında açıklanır.</p></details>
+  </div></div></section>
+  <section class="section reveal" style="background:#151515;border-block:1px solid rgba(212,175,55,.15)"><div class="wrap"><div class="section-head"><div class="eyebrow">Çalışma yaklaşımımız</div><h2>Güven, <span class="gold">açık iletişimle</span> başlar.</h2><p>Henüz yayınlanmış müşteri referanslarımız bulunmadığı için doğrulanmamış yorumlar kullanmıyoruz. Bunun yerine çalışma prensiplerimizi açıkça paylaşıyoruz.</p></div><div class="stage5-trust"><article><b>01 · Net kapsam</b><p>Sayfalar, özellikler, teslim takvimi ve ücretler işe başlamadan önce yazılı olarak belirlenir.</p></article><article><b>02 · Şeffaf süreç</b><p>Proje adımları ve geri bildirim aşamaları baştan konuşulur; sürpriz kapsam değişikliklerinden kaçınılır.</p></article><article><b>03 · Doğrudan iletişim</b><p>Sorularınız ve proje notlarınız için tek bir iletişim noktası üzerinden ilerlenir.</p></article></div></div></section>
+  <section class="cta reveal"><div class="wrap cta-inner"><div><div class="eyebrow">Bir sonraki adım sizin</div><h2>Markanızı dijitalde<br><span class="gold">birlikte büyütelim.</span></h2><p>Projenizi anlatın, ihtiyaçlarınıza uygun bir yol çizelim.</p></div><a class="btn" href="#iletisim">Bize ulaşın ↗</a></div></section>
+  <section class="section reveal" id="iletisim"><div class="wrap contact-grid"><div><div class="eyebrow">İletişim</div><div class="section-head" style="margin-bottom:20px"><h2>Projenizi <span class="gold">konuşalım.</span></h2><p>Ne tasarlamak istediğinizi kısaca anlatın. Size uygun çözümü birlikte değerlendirelim.</p></div><div class="contact-details"><div class="contact-item"><small>Marka</small>HHE Web Studio</div><div class="contact-item"><small>Hizmet alanı</small>Türkiye genelinde uzaktan web tasarım</div><div class="contact-item"><small>WhatsApp</small><a href="https://wa.me/905010474583" target="_blank" rel="noopener noreferrer" style="color:#e8d18a;text-decoration:none">+90 501 047 45 83 ↗</a></div><div class="contact-item"><small>E-posta</small><a href="mailto:hasanhuseyineraslan9@gmail.com" style="color:#e8d18a;text-decoration:none">hasanhuseyineraslan9@gmail.com ↗</a></div></div><div class="contact-actions"><a class="contact-quick" href="mailto:hasanhuseyineraslan9@gmail.com?subject=HHE%20Web%20Studio%20Proje%20Talebi">E-posta ile yazın ↗</a><a class="contact-quick" href="https://wa.me/905010474583?text=Merhaba%2C%20HHE%20Web%20Studio%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp üzerinden yazın ↗</a></div><p class="contact-hint">WhatsApp ve e-posta bağlantıları etkinleştirildi. Teklif formunu doldurduktan sonra bilgilerinizi WhatsApp üzerinden de gönderebilirsiniz.</p></div>
+    <form class="contact-form" id="contactForm"><div class="field"><label for="name">Adınız</label><input id="name" name="name" autocomplete="name" placeholder="Adınız ve soyadınız" required></div><div class="field"><label for="business">İşletmeniz</label><input id="business" name="business" placeholder="İşletme veya marka adı"></div><div class="field"><label for="email">E-posta adresiniz</label><input id="email" name="email" type="email" autocomplete="email" placeholder="ornek@firma.com" required></div><div class="field"><label for="service">İhtiyacınız</label><select id="service" name="service"><option>Henüz karar vermedim / Özel teklif</option><option>Başlangıç paketi</option><option>Profesyonel paketi</option><option>Premium paketi</option><option>Kurumsal web sitesi</option><option>Ürün / mekân tanıtım sitesi</option><option>Mevcut site yenileme</option><option>Diğer</option></select></div><div class="field"><label for="message">Projenizden bahsedin</label><textarea id="message" name="message" placeholder="Nasıl bir web sitesi düşünüyorsunuz?"></textarea></div><div class="contact-actions"><button class="btn" type="submit">E-posta taslağı oluştur ↗</button><button class="contact-quick" id="whatsappSubmit" type="button">WhatsApp ile gönder ↗</button></div><p class="form-note">Form bilgileri sunucuya kaydedilmez. E-posta seçeneği e-posta uygulamanızda taslak açar; WhatsApp seçeneği doldurduğunuz bilgileri mesaj olarak hazırlar.</p><div class="form-status" id="formStatus" role="status"></div></form>
+  </div></section>
+</main>
+<footer><div class="wrap footer-inner"><div><div class="footer-brand">HHE WEB STUDIO</div><div>Design. Build. Grow.</div></div><div>© <span id="year"></span> HHE Web Studio. Tüm hakları saklıdır.</div><div class="legal-links"><a href="gizlilik.html">Gizlilik Politikası</a><a href="kullanim.html">Kullanım Koşulları</a></div><a href="#anasayfa" class="gold">Yukarı çık ↑</a></div></footer>
+<script>
+  const menuBtn=document.getElementById('menuBtn');const navLinks=document.getElementById('navLinks');
+  menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰'});
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  const revealItems=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){const revealObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target)}})},{threshold:.12});revealItems.forEach(item=>revealObserver.observe(item));}else{revealItems.forEach(item=>item.classList.add('is-visible'));}
+document.querySelectorAll('.choose-package').forEach(button=>button.addEventListener('click',()=>{const selected=button.dataset.package;document.getElementById('service').value=selected+' paketi';const message=document.getElementById('message');if(!message.value.trim())message.value='İlgilendiğim paket: '+selected+'\nİşletme ve proje detaylarımı görüşmek istiyorum.';}));
+
+    const quotePackage=document.getElementById('quotePackage');
+    const extraPages=document.getElementById('extraPages');
+    const money=n=>'₺'+Number(n).toLocaleString('tr-TR');
+    function updateQuote(){
+      const base=Number(quotePackage.value)||0;
+      const pages=Math.max(0,Math.min(30,Number(extraPages.value)||0));
+      extraPages.value=pages;
+      const checks=[...document.querySelectorAll('[data-addon]:checked')];
+      const oneTime=checks.filter(x=>x.dataset.addon!=='care').reduce((sum,x)=>sum+Number(x.dataset.price),0);
+      const monthly=checks.filter(x=>x.dataset.addon==='care').reduce((sum,x)=>sum+Number(x.dataset.price),0);
+      const packageName=quotePackage.options[quotePackage.selectedIndex].text.split(' — ')[0];
+      document.getElementById('quotePackageName').textContent=packageName;
+      document.getElementById('quotePagesCost').textContent=money(pages*750);
+      document.getElementById('quoteAddonsCost').textContent=money(oneTime);
+      document.getElementById('quoteTotal').textContent=money(base+pages*750+oneTime);
+      document.getElementById('quoteMonthly').textContent=monthly?`Aylık devam eden bakım bedeli: ${money(monthly)} / ay.`:'Aylık bakım seçilmedi.';
+      return {base,pages,oneTime,monthly,packageName,total:base+pages*750+oneTime,business:document.getElementById('quoteBusiness').value,addons:checks.map(x=>x.parentElement.innerText.replace(/\s+/g,' ').trim())};
+    }
+    [quotePackage,extraPages,document.getElementById('quoteBusiness'),...document.querySelectorAll('[data-addon]')].forEach(el=>el.addEventListener('change',updateQuote));
+    document.getElementById('useQuote').addEventListener('click',()=>{
+      const q=updateQuote();
+      const service=document.getElementById('service');
+      service.value=q.packageName+' paketi';
+      const summary=`Teklif hesaplayıcı özeti:\nİşletme türü: ${q.business}\nPaket: ${q.packageName} (${money(q.base)})\nEk sayfa: ${q.pages} (${money(q.pages*750)})\nTek seferlik ek hizmetler: ${q.addons.filter(x=>!x.startsWith('Aylık bakım')).join(', ')||'Yok'}\nTahmini proje toplamı: ${money(q.total)}\nAylık bakım: ${q.monthly?money(q.monthly)+' / ay':'Seçilmedi'}\n\nBu tutar ön tahmindir; kesin teklif değildir.`;
+      document.getElementById('message').value=summary+'\n\nProje detaylarım:';
+      document.getElementById('quoteStatus').textContent='Teklif özeti iletişim formuna aktarıldı. Bilgilerinizi tamamlayabilirsiniz.';
+      document.getElementById('iletisim').scrollIntoView({behavior:'smooth'});
+    });
+    updateQuote();
+
+    const CONTACT_EMAIL='hasanhuseyineraslan9@gmail.com';
+    const WHATSAPP_NUMBER='905010474583';
+    document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget);const subject=encodeURIComponent('HHE Web Studio — Web sitesi projesi');const body=encodeURIComponent(`Ad: ${d.get('name')}\nİşletme: ${d.get('business')}\nE-posta: ${d.get('email')}\nİhtiyaç: ${d.get('service')}\n\nProje detayları:\n${d.get('message')}`);document.getElementById('formStatus').textContent='E-posta taslağı açılıyor.';window.location.href=`mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;});
+    document.getElementById('whatsappSubmit').addEventListener('click',()=>{const form=document.getElementById('contactForm');if(!form.reportValidity())return;const d=new FormData(form);const text=`Merhaba, HHE Web Studio'dan web sitesi teklifi almak istiyorum.\nAd: ${d.get('name')}\nİşletme: ${d.get('business')}\nE-posta: ${d.get('email')}\nİhtiyaç: ${d.get('service')}\n\nProje detayları:\n${d.get('message')}`;window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`,'_blank','noopener');});
+</script>
+</body>
+</html>
